@@ -13,11 +13,15 @@ body {
   @include min-max(320px, 100%, 0);
 }
 
+.container {
+  @include min-max(320px, 1920px, 0px);
+}
+
 .wrap {
-  @include min-max(320px, 1200px, 15px);
+  @include min-max(320px, 1560px, 15px);
 }
 
 p {
-	color: $white;
-	background-color: $button;
+	// color: $white;
+	// background-color: $button;
 }
