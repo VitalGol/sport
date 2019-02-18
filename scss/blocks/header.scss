@@ -1,0 +1,29 @@
+header{
+	width: 1920px;
+	height: 960px;
+	background: url('../img/football_1920.jpg');
+	background-color: rgba(0, 0, 0, .1);
+	// opacity: 10%;
+		img {
+			display: block;
+			width: 191px;
+			margin: 0 auto;
+			padding: 40px 0 300px;
+			// margin: 45px auto 300px;
+	
+	}
+.header__text{
+	h1{
+		font-size: 90px;
+		line-height: 100px;
+		letter-spacing: 1.8px;
+		color: $white;
+	}
+}
+	h1{
+		font-size: 90px;
+		line-height: 100px;
+		letter-spacing: 1.8px;
+		color: $white;
+	}
+}
