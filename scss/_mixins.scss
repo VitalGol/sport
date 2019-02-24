@@ -1,7 +1,47 @@
 @mixin min-max($min-width, $max-width, $padding) {
-  min-width: $min-width;
-  max-width: $max-width;
-  padding: 0 $padding;
-  box-sizing: border-box;
-  margin: 0 auto;
+	min-width: $min-width;
+	max-width: $max-width;
+	padding: 0 $padding;
+	box-sizing: border-box;
+	// margin: 0 auto;
+
+
+
+}
+
+@mixin btn($bg: $button, $url-left: 40px, $url: url("../img/logo-apple.png"), $pad-left: 100px, $pad-right: 62px) {
+
+	// width: 311px;
+	// height: 77px;
+	border-radius: 38px 39px 39px 38px/38px;
+	border: 1px solid $bg;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.14px;
+	text-transform: uppercase;
+	background: $url $url-left center no-repeat,
+		$bg;
+	display: inline-block;
+	padding: 21px $pad-right 21px $pad-left;
+	box-sizing: border-box;
+	transition-duration: 0.5s;
+	transition-property: background-color, border-color;
+
+	p {
+		color: $white;
+		font-size: 14px;
+		letter-spacing: 0.7px;
+		font-weight: 400;
+
+		span {
+			font-weight: 600;
+		}
+	}
+
+	@content;
+
+	&:hover {
+		background-color: lighten($bg, 10%);
+		border-color: lighten($bg, 10%);
+	}
 }

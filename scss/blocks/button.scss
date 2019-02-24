@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin: 0 auto 110px;
+  .button-left {
+    @include btn() {
+      margin-right: 50px;
+    }
+  }
+  .button-right {
+    @include btn( $url-left: 57px, $url: url("../img/logo-app.png"), $pad-left: 125px, $pad-right: 79px) {
+      // margin-left: 200px;
+    }
+  }
+}
