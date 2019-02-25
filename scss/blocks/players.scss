@@ -1,0 +1,202 @@
+.players {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+
+	.players__text {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 40.6%;
+		padding: 0 15px;
+		margin-right: -9.1%;
+
+		h1 {
+			font-size: 80px;
+			font-weight: 600;
+			line-height: 60px;
+			letter-spacing: 8px;
+			text-transform: uppercase;
+			color: $title-h1;
+			margin: 70px 0 110px;
+		}
+
+		h2 {
+			font-size: 36px;
+			font-weight: 600;
+			text-transform: uppercase;
+			line-height: 35px;
+			letter-spacing: 3.6px;
+			color: $title-h2;
+			padding-left: 30px;
+			margin-bottom: 30px;
+			position: relative;
+
+			span {
+				font-size: 18px;
+				font-weight: 600;
+				letter-spacing: 0.9px;
+				color: $black;
+				position: absolute;
+				top: -5px;
+				left: 0;
+
+				&::before {
+					content: "";
+					background-color: $button;
+					border-radius: 2px;
+					position: absolute;
+					top: 31px;
+					left: 0;
+					width: 22px;
+					height: 5px;
+					z-index: 2;
+				}
+			}
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 28px;
+			letter-spacing: 1px;
+			color: $black;
+			margin-bottom: 120px;
+		}
+
+		.players__text-01 {
+
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0;
+				width: 100%;
+				height: 500px;
+				background-color: $white;
+				z-index: -1;
+			}
+		}
+
+		.players__text-02 {
+			&::before {
+				content: "";
+				position: absolute;
+				top: 420px;
+				left: 0;
+				width: 100%;
+				height: 350px;
+				background-color: $athlets-fon;
+				z-index: -1;
+			}
+		}
+
+		.players__text-03 {
+			span {
+				color: $button;
+
+				&::before {
+					background-color: $title-h1;
+				}
+			}
+
+			p {
+				color: $white;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 633px;
+				left: 0;
+				width: 100%;
+				height: 305px;
+				background-color: $players-fon-bottom;
+				z-index: -1;
+			}
+		}
+	}
+
+	.players__img {
+
+		display: flex;
+		margin: -40px 6.5% 0 0;
+		padding-bottom: 30px;
+	}
+}
+
+@media (max-width: 1730px) {
+	.players {
+		.players__text {
+			margin-top: 20px;
+			margin-bottom: -20px;
+
+			.players__text-02 {
+				&::before {
+					top: 417px;
+				}
+			}
+
+			.players__text-03 {
+				&::before {
+					top: 655px;
+				}
+			}
+		}
+
+		.players__img {
+			margin-top: -20px;
+			margin-right: 3%;
+		}
+	}
+}
+
+
+@media (max-width: 1610px) {
+
+	.players {
+		.players__text {
+			.players__text-02 {
+				&::before {
+					top: 440px;
+				}
+			}
+
+			.players__text-03 {
+				&::before {
+					top: 675px;
+				}
+			}
+		}
+
+		.players__img {
+			margin-right: 2%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.players {
+		.players__text {
+			.players__text-02 {
+				&::before {
+					top: 470px;
+				}
+			}
+
+			.players__text-03 {
+				&::before {
+					top: 710px;
+				}
+			}
+		}
+
+		.players__img {
+			margin-right: -18%;
+		}
+	}
+}
